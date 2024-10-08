@@ -83,20 +83,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  timeText: {
-    color: '#FFFFFF',
-    fontSize: 17,
-    marginRight: 8,
-  },
-  batteryWifi: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  batteryText: {
-    color: '#FFFFFF',
-    fontSize: 11,
-    marginLeft: 4,
-  },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
