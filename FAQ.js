@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   faqItem: {
-    backgroundColor: '#3478F6',
+    backgroundColor: '#225580',
     borderRadius: 8,
     padding: 16,
     marginBottom: 12,
