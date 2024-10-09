@@ -104,6 +104,9 @@ const styles = {
     top: -100,
     flexDirection: "row",
     alignItems: "center",
+    padding: 5,
+    backgroundColor: "rgba(150, 181, 207, 0.75)",
+    borderRadius: 5,
   },
   ormawaIcon: {
     width: 24,
