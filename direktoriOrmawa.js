@@ -61,15 +61,15 @@ export default () => {
           </TouchableOpacity>
           <TouchableOpacity style={[styles.tabItem, styles.activeTab]}>
             <FontAwesome name="th-large" size={30} color="#6b7280" />
-            <Text style={styles.tabText}>Lainnya</Text>
+            <Text style={styles.tabText}>Kategori</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tabItem}>
             <FontAwesome name="book" size={30} color="#6b7280" />
-            <Text style={styles.tabText}>Akademik</Text>
+            <Text style={styles.tabText}>Info Pendaftaran</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tabItem}>
             <FontAwesome name="envelope" size={30} color="#6b7280" />
-            <Text style={styles.tabText}>Pesan</Text>
+            <Text style={styles.tabText}>FAQ</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.tabItem}>
             <FontAwesome name="user" size={30} color="#6b7280" />
