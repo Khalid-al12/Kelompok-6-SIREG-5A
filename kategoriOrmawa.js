@@ -21,7 +21,7 @@ export default () => {
           <View style={styles.elipse}></View>
         </View>
 
-       <TouchableOpacity style={styles.mainCard}>
+        <TouchableOpacity style={styles.mainCard}>
             <Image
                 source={require('./assets/ketegori.png')}
                 style={styles.categoryIcon}
@@ -55,7 +55,6 @@ export default () => {
             Dapatkan Informasi Seputar Organisasi Mahasiswa Disini
           </Text>
         </TouchableOpacity>
-
 
         <View style={styles.tabBar}>
           <TouchableOpacity style={styles.tabItem}>
@@ -93,7 +92,6 @@ const styles = {
     flexGrow: 1,
   },
   header: {
-    overflow: 'hidden',
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -103,6 +101,7 @@ const styles = {
     borderBottomLeftRadius: 20, 
     borderBottomRightRadius: 20, 
     marginBottom: 20,
+    overflow: 'hidden',
   },
   headerLeft: {
     top: -100,
