@@ -20,7 +20,7 @@ export default () => {
           </TouchableOpacity>
         </View>
 
-        <View style={styles.mainCard}>
+       <TouchableOpacity style={styles.mainCard}>
             <Image
                 source={require('./assets/ketegori.png')}
                 style={styles.categoryIcon}
@@ -31,9 +31,9 @@ export default () => {
                 Dapatkan Informasi Seputar Organisasi Mahasiswa Disini
                 </Text>
             </View>
-          </View>
+          </TouchableOpacity>
 
-        <View style={styles.categoryCard}>
+        <TouchableOpacity style={styles.categoryCard}>
           <Image
             source={require('./assets/Universitas.png')}
             style={styles.universityIcon}
@@ -42,9 +42,9 @@ export default () => {
           <Text style={styles.categorySubtitle}>
             Cari organisasi mahasiswa tingkat Universitas disini!
           </Text>
-        </View>
+        </TouchableOpacity>
 
-        <View style={styles.categoryCard}>
+        <TouchableOpacity style={styles.categoryCard}>
           <Image
             source={require('./assets/Fakultas.png')}
             style={styles.facultyIcon}
@@ -53,7 +53,8 @@ export default () => {
           <Text style={styles.categorySubtitle}>
             Dapatkan Informasi Seputar Organisasi Mahasiswa Disini
           </Text>
-        </View>
+        </TouchableOpacity>
+
 
         <View style={styles.tabBar}>
           <TouchableOpacity style={styles.tabItem}>
