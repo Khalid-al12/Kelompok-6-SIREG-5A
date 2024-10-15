@@ -18,6 +18,7 @@ export default () => {
             <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
             <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
           </TouchableOpacity>
+          <View style={styles.elipse}></View>
         </View>
 
        <TouchableOpacity style={styles.mainCard}>
@@ -92,6 +93,7 @@ const styles = {
     flexGrow: 1,
   },
   header: {
+    overflow: 'hidden',
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -124,10 +126,21 @@ const styles = {
     top: -100,
     padding: 8,
     flexDirection: "row",
+    zIndex: 99,
   },
   backButtonText: {
     color: "#FFFFFF",
     fontSize: 18,
+  },
+  elipse: {
+    left: 166,
+    top: 34,
+    right: -270,
+    width: 494,
+    height: 494,
+    position: "absolute",
+    borderRadius: 494,
+    backgroundColor: "#63ABE6",
   },
   mainCard: {
     position: "absolute",
