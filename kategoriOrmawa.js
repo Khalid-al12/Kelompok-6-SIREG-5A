@@ -16,6 +16,7 @@ export default () => {
           </View>
           <TouchableOpacity style={styles.backButton}>
             <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
+            <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
           </TouchableOpacity>
         </View>
 
@@ -121,6 +122,7 @@ const styles = {
   backButton: {
     top: -100,
     padding: 8,
+    flexDirection: "row",
   },
   backButtonText: {
     color: "#FFFFFF",
