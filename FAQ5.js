@@ -77,7 +77,7 @@ export default (props) => {
               }}
             >
               <Text style={{ color: "#222222", fontSize: 18, width: 332 }}>
-                {"Apakah wajib mengikuti organisasi\nbagi mahasiswa?"}
+                {"Apakah mahasiswa harus mengikuti\norganisasi mahasiswa?"}
               </Text>
             </View>
 
