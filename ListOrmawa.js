@@ -15,11 +15,26 @@ export default function OrmawaScreen() {
     <SafeAreaView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerText}>Profil Ormawa Universitas</Text>
-        <TouchableOpacity style={styles.headerbackButton}>
-          <FontAwesome name="arrow-left" size={24} color="white" />
-        </TouchableOpacity>
-      </View>
+          <View style={styles.headerLeft}>
+            <Image
+              source={require('./assets/logo_direktori.png')}
+              style={styles.ormawaIcon}
+            />
+            <Text style={styles.headerText}>Ormawa</Text>
+          </View>
+          <TouchableOpacity style={styles.backButton}>
+            <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
+            <FontAwesome style={styles.backButtonText} name="chevron-left" size={24} color="white" />
+          </TouchableOpacity>
+          <View style={styles.elipse}></View>
+        </View>
+
+        <TouchableOpacity style={styles.mainCard}>
+            <View style={styles.mainCardContent}>
+                <Text style={styles.mainCardTitle}>ORMAWA UNIVERSITAS</Text>
+            </View>
+          </TouchableOpacity>
+
 
       {/* Ormawa List */}
       <ScrollView style={styles.scrollView}>
@@ -67,21 +82,76 @@ const styles = StyleSheet.create({
     backgroundColor: "#F7F9FC",
   },
   header: {
-    backgroundColor: "#3470A2",
-    paddingVertical: 50,
-    paddingHorizontal: 33,
+    flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
+    padding: 16,
+    height: 211,
+    backgroundColor: "#3470A2",
+    borderBottomLeftRadius: 20, 
+    borderBottomRightRadius: 20, 
+    marginBottom: 20,
+    overflow: 'hidden',
+  },
+  headerLeft: {
+    top: -50,
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 5,
+    backgroundColor: "rgba(150, 181, 207, 0.75)",
+    borderRadius: 5,
+  },
+  ormawaIcon: {
+    width: 24,
+    height: 24,
+    marginRight: 8,
   },
   headerText: {
     color: "#FFFFFF",
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "bold",
   },
-  headerbackButton: {
-    backgroundColor: '#93C5FD',
+  backButton: {
+    top: -50,
     padding: 8,
-    borderRadius: 8,
-    marginLeft: 250,
+    flexDirection: "row",
+    zIndex: 99,
+  },
+  backButtonText: {
+    color: "#FFFFFF",
+    fontSize: 18,
+  },
+  elipse: {
+    left: 166,
+    top: 34,
+    right: -270,
+    width: 494,
+    height: 494,
+    position: "absolute",
+    borderRadius: 494,
+    backgroundColor: "#63ABE6",
+  },
+  mainCard: {
+    position: "absolute",
+    flexDirection: "row",
+    padding: 16,
+    marginRight: 16,
+    marginLeft: 16,
+    marginTop: 100, 
+    alignItems: "center",
+    zIndex: 999,
+  },
+  mainCardContent: {
+    flex: 1,
+  },
+  mainCardTitle: {
+    marginLeft: 55,
+    alignContent: "center",
+    position: "absolute",
+    color: "#FFFFFF",
+    fontSize: 22,
+    fontWeight: "bold",
+    marginBottom: 4,
   },
   main: {
     alignItems: 'center',
@@ -93,10 +163,13 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   card: {
+    width: 346,
+    height: 120,
     flexDirection: "row",
     backgroundColor: "#FFFFFF",
     borderRadius: 10,
     padding: 15,
+    marginLeft: 22,
     marginBottom: 12,
     alignItems: "center",
     shadowColor: "#000",
@@ -115,7 +188,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "bold",
     color: "#000",
   },
